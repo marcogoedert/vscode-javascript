@@ -1,17 +1,17 @@
 {
-  "name": "JavaScriptSnippets",
-  "description": "Code snippets for JavaScript in ES6 syntax",
-  "version": "1.8.0",
-  "displayName": "JavaScript (ES6) code snippets",
-  "publisher": "xabikos",
+  "name": "JavaScriptSnippetsUpdated",
+  "description": "Code snippets for JavaScript in ES6 syntax (Updated)",
+  "version": "1.0.0",
+  "displayName": "JavaScript ES6 code snippets 2023",
+  "publisher": "MarcoGoedert",
   "icon": "images/javascript.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xabikos/vscode-javascript"
+    "url": "https://github.com/marcogoedert/vscode-javascript"
   },
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^0.10.0"
   },
   "categories": [
     "Snippets"
@@ -21,19 +21,24 @@
       {
         "language": "javascript",
         "path": "./snippets/snippets.json"
-      }, {
+      },
+      {
         "language": "typescript",
         "path": "./snippets/snippets.json"
-      }, {
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
-      }, {
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/snippets.json"
-      }, {
+      },
+      {
         "language": "html",
         "path": "./snippets/snippets.json"
-      }, {
+      },
+      {
         "language": "vue",
         "path": "./snippets/snippets.json"
       }

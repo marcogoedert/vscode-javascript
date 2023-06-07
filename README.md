@@ -8,6 +8,8 @@
 
 This extension contains code snippets for JavaScript in ES6 syntax for [Vs Code][code] editor (supports both JavaScript and TypeScript).
 
+Authors: Aloísio Bastian, Fernando Elger e Marco Goedert
+
 ### Note
 **All the snippets include the final semicolon `;` There is a fork of those snippets [here](https://marketplace.visualstudio.com/items?itemName=jmsv.JavaScriptSnippetsStandard)
 made by @jmsv where semicolons are not included. So feel free to use them according to your needs.**
@@ -73,6 +75,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `sto→`   | set timeout helper method `setTimeout(() => {});` |
 | `prom→`  | creates a new Promise `return new Promise((resolve, reject) => {});`|
 | `thenc→` | adds then and catch declaration to a promise `.then((res) => {}).catch((err) => {});`|
+| `trv→`   | returns a new array with the elements in reversed order `const reversedArray = ${1:array}.toReversed();` |
+| `tsd→`   | returns a new array with the elements sorted `const ${1:sortedArray} = ${2:array}.toSorted();` |
+| `tsp→`   | returns a new array with the elements spliced `const ${1:splicedArrray} = ${2:array}.toSpliced(${3:values});` |
 
 ### Console methods
 | Trigger  | Content |

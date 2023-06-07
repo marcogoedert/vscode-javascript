@@ -64,7 +64,6 @@
     "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
     "description": "Export default class which extends a base one in ES6 syntax"
   },
-
   "constructor": {
     "prefix": "con",
     "body": "constructor(${1:params}) {\n\t${0}\n}",
@@ -85,7 +84,6 @@
     "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
     "description": "Creates a setter property inside a class in ES6 syntax"
   },
-
   "forEach": {
     "prefix": "fre",
     "body": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n});",
@@ -141,7 +139,6 @@
     "body": ".then((${1:result}) => {\n\t${2}\n}).catch((${3:err}) => {\n\t${4}\n});",
     "description": "Add the .then and .catch methods to handle promises"
   },
-
   "consoleAssert": {
     "prefix": "cas",
     "body": "console.assert(${1:expression}, ${2:object});",
@@ -157,7 +154,7 @@
     "body": "console.count(${1:label});",
     "description": "Writes the the number of times that count() has been invoked at the same line and with the same label"
   },
-    "consoleDebug": {
+  "consoleDebug": {
     "prefix": "cdb",
     "body": "console.debug(${1:object});",
     "description": "Displays a message in the console. Also display a blue right arrow icon along with the logged message in Safari"
@@ -221,5 +218,20 @@
     "prefix": "cte",
     "body": "console.timeEnd(${1:object});",
     "description": "Sets end point for execution time measurement"
+  },
+  "toReversed": {
+    "prefix": "trv",
+    "body": "const reversedArray = ${1:array}.toReversed();",
+    "description": "Returns a new array with the elements in reversed order"
+  },
+  "toSorted": {
+    "prefix": "tsd",
+    "body": "const ${1:sortedArray} = ${2:array}.toSorted();",
+    "description": "Returns a new array with the elements sorted"
+  },
+  "toSpliced": {
+    "prefix": "tsp",
+    "body": "const ${1:splicedArrray} = ${2:array}.toSpliced(${3:values});",
+    "description": "Returns a new array with the elements spliced"
   }
 }
