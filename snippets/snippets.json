@@ -221,17 +221,97 @@
   },
   "toReversed": {
     "prefix": "trv",
-    "body": "const reversedArray = ${1:array}.toReversed();",
-    "description": "Returns a new array with the elements in reversed order"
+    "body": "${1:array}.toReversed();",
+    "description": "Returns a new array with reversed elements"
   },
   "toSorted": {
     "prefix": "tsd",
-    "body": "const ${1:sortedArray} = ${2:array}.toSorted();",
-    "description": "Returns a new array with the elements sorted"
+    "body": "${1:array}.toSorted(${2:compareFn});",
+    "description": "Returns a new array with sorted elements"
   },
   "toSpliced": {
     "prefix": "tsp",
-    "body": "const ${1:splicedArrray} = ${2:array}.toSpliced(${3:values});",
-    "description": "Returns a new array with the elements spliced"
+    "body": "${1:array}.toSpliced(${2:start}, ${3:deleteCount}, ...${4:items});",
+    "description": "Returns a new array with spliced elements"
+  },
+  "with": {
+    "prefix": "with",
+    "body": "${1:array}.with(${2:index}, ${3:value});",
+    "description": "Returns a new array with a changed value at the specified index"
+  },
+  "typedArrayToReversed": {
+    "prefix": "tatrv",
+    "body": "${1:typedArray}.toReversed();",
+    "description": "Returns a new TypedArray with reversed elements"
+  },
+  "typedArrayToSorted": {
+    "prefix": "tatsd",
+    "body": "${1:typedArray}.toSorted(${2:compareFn});",
+    "description": "Returns a new TypedArray with sorted elements"
+  },
+  "typedArrayWith": {
+    "prefix": "tawith",
+    "body": "${1:typedArray}.with(${2:index}, ${3:value});",
+    "description": "Returns a new TypedArray with a changed value at the specified index"
+  },
+  "findLast": {
+    "prefix": "fl",
+    "body": "array.findLast(${1:condition});",
+    "description": "Finds the last element in the array that satisfies the condition"
+  },
+  "findLastIndex": {
+    "prefix": "fli",
+    "body": "array.findLastIndex(${1:condition});",
+    "description": "Finds the index of the last element in the array that satisfies the condition"
+  },
+  "hashbangGrammar": {
+    "prefix": "hashbang",
+    "body": "#!/usr/bin/env node\n'use strict';\nconsole.log(1);\n#!/usr/bin/env node\nexport {};\nconsole.log(1);",
+    "description": "Hashbang Grammar"
+  },
+  "symbolKey": {
+    "prefix": "sym",
+    "body": "const ${1:key} = Symbol('${2:description}');$0",
+    "description": "Creates a unique Symbol key"
+  },
+  "weakMapSet": {
+    "prefix": "wms",
+    "body": "${1:weakMap}.set(${2:key}, ${3:value});$0",
+    "description": "Sets a value in a WeakMap using a Symbol key"
+  },
+  "weakMapGet": {
+    "prefix": "wmg",
+    "body": "${1:weakMap}.get(${2:key});$0",
+    "description": "Gets a value from a WeakMap using a Symbol key"
+  },
+  "weakMapHas": {
+    "prefix": "wmh",
+    "body": "${1:weakMap}.has(${2:key});$0",
+    "description": "Checks if a WeakMap has a value associated with a Symbol key"
+  },
+  "shadowRealmEvaluate": {
+    "prefix": "sre",
+    "body": "${1:realm}.evaluate(`(${2:params}) => {\n\t${3:code}\n}`);$0",
+    "description": "Evaluates code in a ShadowRealm"
+  },
+  "objectLookupSet": {
+    "prefix": "ols",
+    "body": "${1:objectLookup}.set(${2:symbol}, ${3:object});$0",
+    "description": "Sets a value in an object lookup using a Symbol key"
+  },
+  "objectLookupGet": {
+    "prefix": "olg",
+    "body": "${1:objectLookup}.get(${2:symbol});$0",
+    "description": "Gets a value from an object lookup using a Symbol key"
+  },
+  "refCollectionRef": {
+    "prefix": "rfr",
+    "body": "${1:refs}.ref(${2:object});$0",
+    "description": "Creates a reference in a RefBookkeeper using a Symbol key"
+  },
+  "refCollectionDeref": {
+    "prefix": "rfd",
+    "body": "${1:refs}.deref(${2:symbol});$0",
+    "description": "Gets the object associated with a Symbol key in a RefBookkeeper"
   }
 }
