@@ -1,20 +1,13 @@
-# vscode-js-snippets
+# vscode-javascript
 
 ## JavaScript ES6 code snippets (Updated)
 
 ---
 
-<p>
-
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/MarcoGoedert.JavaScriptSnippetsUpdated.svg?style=flat-square)
-
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/MarcoGoedert.JavaScriptSnippetsUpdated.svg?style=flat-square)
-
 ![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/MarcoGoedert.JavaScriptSnippetsUpdated.svg?style=flat-square)
-
-</p>
 
 This extension contains code snippets for JavaScript in ES6 syntax for [Vs Code][code] editor (supports both JavaScript and TypeScript). **It includes snippets for new features released with ECMAScript 2023.**
 
