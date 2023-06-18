@@ -11,11 +11,13 @@
 
 This extension contains code snippets for JavaScript in ES6 syntax for [Vs Code][code] editor (supports both JavaScript and TypeScript). **It includes snippets for new features released with ECMAScript 2023.**
 
+> This extension is a fork from the original [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) made by [xabikos](https://github.com/xabikos). The original extension is no longer maintained and the author is not accepting pull requests. This fork is maintained by [Marco Goedert](https://github.com/marcogoedert).
+
 ## Contributors
 
-- Marco Goedert
-- Aloísio Bastian
-- Fernando Elger
+- [Marco Goedert](https://github.com/marcogoedert)
+- [Aloísio Bastian](https://github.com/Aloisio-Miguel)
+- [Fernando Elger](https://github.com/fernandoelger)
 
 ### Note
 
