@@ -313,5 +313,15 @@
     "prefix": "rfd",
     "body": "${1:refs}.deref(${2:symbol});$0",
     "description": "Gets the object associated with a Symbol key in a RefBookkeeper"
+  },
+  "at": {
+    "prefix": "at",
+    "body": "${1:target}.at(${2:index})$0",
+    "description": "Access the character at the specified index using negative or positive index"
+  },
+  "hasOwn": {
+    "prefix": "own",
+    "body": "Object.hasOwn(${1:object}, ${2:property})$0",
+    "description": "Check if an object has a specific property"
   }
 }

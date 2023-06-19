@@ -56,14 +56,14 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |       `fl` | Finds the last element in the array that satisfies the condition `array.findLast(${1:condition});`                       |
 |      `fli` | Finds the index of the last element in the array that satisfies the condition `array.findLastIndex(${1:condition});`     |
 | `hashbang` | Hashbang Grammar `#!/usr/bin/env node\n'use strict';\nconsole.log(1);\n#!/usr/bin/env node\nexport {};\nconsole.log(1);` |
-|      `sym` | Creates a unique Symbol key `const ${1:key} = Symbol('${2:description}');$0`                                             |
-|      `wms` | Sets a value in a WeakMap using a Symbol key `${1:weakMap}.set(${2:key}, ${3:value});$0`                                 |
-|      `wmg` | Gets a value from a WeakMap using a Symbol key `${1:weakMap}.get(${2:key});$0`                                           |
-|      `wmh` | Checks if a WeakMap has a value associated with a Symbol key `${1:weakMap}.has(${2:key});$0`                             |
-|      `ols` | Sets a value in an object lookup using a Symbol key `${1:objectLookup}.set(${2:symbol}, ${3:object});$0`                 |
-|      `olg` | Gets a value from an object lookup using a Symbol key `${1:objectLookup}.get(${2:symbol});$0`                            |
-|      `rfr` | Creates a reference in a RefBookkeeper using a Symbol key `${1:refs}.ref(${2:object});$0`                                |
-|      `rfd` | Gets the object associated with a Symbol key in a RefBookkeeper `${1:refs}.deref(${2:symbol});$0`                        |
+|      `sym` | Creates a unique Symbol key `const ${1:key} = Symbol('${2:description}');`                                               |
+|      `wms` | Sets a value in a WeakMap using a Symbol key `${1:weakMap}.set(${2:key}, ${3:value});`                                   |
+|      `wmg` | Gets a value from a WeakMap using a Symbol key `${1:weakMap}.get(${2:key});`                                             |
+|      `wmh` | Checks if a WeakMap has a value associated with a Symbol key `${1:weakMap}.has(${2:key});`                               |
+|      `ols` | Sets a value in an object lookup using a Symbol key `${1:objectLookup}.set(${2:symbol}, ${3:object});`                   |
+|      `olg` | Gets a value from an object lookup using a Symbol key `${1:objectLookup}.get(${2:symbol});`                              |
+|      `rfr` | Creates a reference in a RefBookkeeper using a Symbol key `${1:refs}.ref(${2:object});`                                  |
+|      `rfd` | Gets the object associated with a Symbol key in a RefBookkeeper `${1:refs}.deref(${2:symbol});`                          |
 
 References:
 
@@ -71,6 +71,13 @@ References:
 - [tc39/proposal-change-array-by-copy](https://github.com/tc39/proposal-change-array-by-copy): Provides additional methods on `Array.prototype` and `TypedArray.prototype` to enable changes on the array by returning a new copy of it with the change.
 - [tc39/proposal-symbols-as-weakmap-keys](https://github.com/tc39/proposal-symbols-as-weakmap-keys): This proposal extends the WeakMap API to allow usage of unique Symbols as keys.
 - [tc39/proposal-hashbang](https://github.com/tc39/proposal-hashbang): This proposal is to match de-facto usage in some CLI JS hosts that allow for Shebangs / Hashbang. Such hosts strip the hashbang in order to generate valid JS source texts before passing to JS engines currently. This would move the stripping to engines, it does unify and standardize how that is done.
+
+### ECMAScript 2022 new features
+
+| Trigger | Content                                                                                                    |
+| ------: | ---------------------------------------------------------------------------------------------------------- |
+|   `at→` | Access the character at the specified index using negative or positive index `${1:target}.at(${2:index});` |
+|  `own→` | Check if an object has a specific property `Object.hasOwn(${1:object}, ${2:property});`                    |
 
 ### Import and export
 
