@@ -19,6 +19,10 @@ This extension contains code snippets for JavaScript in ES6 syntax for [Vs Code]
 - [Aloísio Bastian](https://github.com/Aloisio-Miguel)
 - [Fernando Elger](https://github.com/fernandoelger)
 
+### Demo
+
+- [PUC-RS Assignment 3 Presentation](https://youtu.be/Phc_7XHeB_Y)
+
 ### Note
 
 **All the snippets include the final semicolon `;` There is a fork of those snippets [here](https://marketplace.visualstudio.com/items?itemName=jmsv.JavaScriptSnippetsStandard)
